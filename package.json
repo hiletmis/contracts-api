@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "generate-gh-pages-data": "ts-node src/scripts/generate-gh-pages-data.ts"
+    "generate-gh-pages-data": "ts-node --esm src/scripts/generate-gh-pages-data.ts"
   },
   "keywords": [],
   "author": "",
