@@ -1,0 +1,19 @@
+{
+  "name": "contracts-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "generate-gh-pages-data": "ts-node src/scripts/generate-gh-pages-data.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@api3/contracts": "^32.0.1",
+    "@api3/dapi-management": "^3.79.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
