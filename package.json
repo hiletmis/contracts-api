@@ -15,5 +15,6 @@
     "@api3/dapi-management": "^3.79.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
-  }
+  },
+  "packageManager": "pnpm@10.25.0"
 }
