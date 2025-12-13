@@ -1,5 +1,5 @@
 import { CHAINS, deploymentAddresses } from '@api3/contracts';
-import { dapis } from '@api3/dapi-management';
+import { dapis, api3ApiIntegrations } from '@api3/dapi-management';
 import * as fs from 'fs';
 
 async function generateGHPagesData() {
@@ -8,12 +8,14 @@ async function generateGHPagesData() {
   const chainsJson = JSON.stringify(CHAINS, null, 2);
   const deploymentAddressesJson = JSON.stringify(deploymentAddresses, null, 2);
   const dapisJson = JSON.stringify(dapis, null, 2);
+  const apisData = JSON.stringify(api3ApiIntegrations.apisData, null, 2);
 
   fs.mkdirSync('gh-pages-data', { recursive: true });
 
   fs.writeFileSync('gh-pages-data/chains.json', chainsJson);
   fs.writeFileSync('gh-pages-data/deployment-addresses.json', deploymentAddressesJson);
   fs.writeFileSync('gh-pages-data/dapis.json', dapisJson);
+  fs.writeFileSync('gh-pages-data/apis-data.json', apisData);
 
   console.log('gh-pages data generated successfully.');
 }
