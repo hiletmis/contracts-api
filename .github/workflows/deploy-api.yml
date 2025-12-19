@@ -16,14 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20.19.5'
+          node-version: '24.12.0'
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -33,7 +33,7 @@ jobs:
         run: pnpm run generate-gh-pages-data
 
       - name: Upload generated data
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: gh-pages-data
 
