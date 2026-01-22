@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@api3/contracts": "^33.1.0",
+    "@api3/contracts": "^34.0.0",
     "@api3/dapi-management": "^4.4.0",
     "ts-node": "^10.9.2"
   },
