@@ -12,8 +12,8 @@ importers:
         specifier: ^33.1.0
         version: 33.1.0(typescript@5.9.3)
       '@api3/dapi-management':
-        specifier: ^4.3.0
-        version: 4.3.0(eslint@8.57.1)(typescript@5.9.3)
+        specifier: ^4.4.0
+        version: 4.4.0(eslint@8.57.1)(typescript@5.9.3)
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@25.0.0)(typescript@5.9.3)
@@ -85,8 +85,8 @@ packages:
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  '@api3/dapi-management@4.3.0':
-    resolution: {integrity: sha512-Kpgw/419Z55+p3ayMgr6ramiFyjFd64l5pMIlkkUcSNVeM7Thai65+BNl5uoMBEbqzeFzpGeaUZ9MGrPrhte8A==}
+  '@api3/dapi-management@4.4.0':
+    resolution: {integrity: sha512-Jn2jPaJKHlEnnRUz8IGTXVYRpQbVOeYzhP7L3pDiJlQZkw0ppGMhUMk6Wp4aLLeByB7hL8eVh93Mlwjet3xylQ==}
 
   '@api3/ois@2.3.2':
     resolution: {integrity: sha512-hYQCbCAtWMGKV+pECRY5tbfCSOcheeo9s6wtrhn1dOWw151VeG0sKG3VbBEsyA6cvSaldewBWY3t/JGaupdThg==}
@@ -3468,11 +3468,11 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@api3/dapi-management@4.3.0(eslint@8.57.1)(typescript@5.9.3)':
+  '@api3/dapi-management@4.4.0(eslint@8.57.1)(typescript@5.9.3)':
     dependencies:
       '@api3/api-integrations': 11.3.0(eslint@8.57.1)(typescript@5.9.3)
       '@api3/commons': 1.1.2
-      '@api3/contracts': 32.3.0(typescript@5.9.3)
+      '@api3/contracts': 33.1.0(typescript@5.9.3)
       ethers: 6.16.0
       zod: 4.3.5
     transitivePeerDependencies:
