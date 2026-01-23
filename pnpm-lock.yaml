@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@api3/contracts':
-        specifier: ^33.1.0
-        version: 33.1.0(typescript@5.9.3)
+        specifier: ^34.0.0
+        version: 34.0.0(typescript@5.9.3)
       '@api3/dapi-management':
         specifier: ^4.4.0
         version: 4.4.0(eslint@8.57.1)(typescript@5.9.3)
@@ -82,6 +82,11 @@ packages:
 
   '@api3/contracts@33.1.0':
     resolution: {integrity: sha512-/X3vvMGaf6FyRM+ZHsicIdyH471/wfDAWBVQbFs0HACNDQ2Kl6oPxBxFChOpFCSpvhsGGXf9efeeZWKNxtsxsA==}
+    engines: {node: '>=22.18.0'}
+    hasBin: true
+
+  '@api3/contracts@34.0.0':
+    resolution: {integrity: sha512-jA/gBNb33zoEp1oDVDFl7xnLvTFkrVr+B3SICoiEXjdzMRPm0rsBIWKV2+r69MhDR+ZIjsd20cWuT53EZLbbZw==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
@@ -3458,6 +3463,17 @@ snapshots:
       - utf-8-validate
 
   '@api3/contracts@33.1.0(typescript@5.9.3)':
+    dependencies:
+      ethers: 6.16.0
+      viem: 2.41.2(typescript@5.9.3)(zod@4.3.5)
+      yargs: 17.7.2
+      zod: 4.3.5
+    transitivePeerDependencies:
+      - bufferutil
+      - typescript
+      - utf-8-validate
+
+  '@api3/contracts@34.0.0(typescript@5.9.3)':
     dependencies:
       ethers: 6.16.0
       viem: 2.41.2(typescript@5.9.3)(zod@4.3.5)
