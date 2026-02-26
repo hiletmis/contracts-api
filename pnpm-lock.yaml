@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@api3/contracts':
-        specifier: ^34.0.0
-        version: 34.0.0(typescript@5.9.3)
+        specifier: ^36.0.0
+        version: 36.0.0(typescript@5.9.3)
       '@api3/dapi-management':
         specifier: ^4.9.0
         version: 4.9.0(eslint@8.57.1)(typescript@5.9.3)
