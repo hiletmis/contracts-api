@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@api3/contracts": "^36.0.1",
-    "@api3/dapi-management": "^4.9.0",
+    "@api3/dapi-management": "^4.10.0",
     "ts-node": "^10.9.2"
   },
   "packageManager": "pnpm@10.33.0",
