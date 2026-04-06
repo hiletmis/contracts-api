@@ -1,0 +1,400 @@
+{
+  "chains": [
+    {
+      "alias": "apechain-arbitrum-sepolia-testnet",
+      "metadata": {
+        "arch": "arbitrum-orbit",
+        "contracts": {
+          "ArbSys": "0x0000000000000000000000000000000000000064"
+        }
+      }
+    },
+    {
+      "alias": "apechain",
+      "metadata": {
+        "arch": "arbitrum-orbit",
+        "contracts": {
+          "ArbSys": "0x0000000000000000000000000000000000000064"
+        }
+      }
+    },
+    {
+      "alias": "arbitrum-sepolia-testnet",
+      "metadata": {
+        "arch": "arbitrum-orbit",
+        "contracts": {
+          "ArbSys": "0x0000000000000000000000000000000000000064"
+        }
+      }
+    },
+    {
+      "alias": "arbitrum",
+      "metadata": {
+        "arch": "arbitrum-orbit",
+        "contracts": {
+          "ArbSys": "0x0000000000000000000000000000000000000064"
+        }
+      }
+    },
+    {
+      "alias": "avalanche-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "avalanche",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "base-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "base",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "bitlayer",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "blast",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "bob-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "bob",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "bsc-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "bsc",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "core-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "core",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "ethereum-hoodi-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "ethereum-sepolia-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "ethereum",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "fraxtal",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "gnosis-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "gnosis",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "hyperliquid-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "hyperliquid",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "injective-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "injective",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "katana-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "katana",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "kava-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "kava",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "linea",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "manta-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "manta",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "mantle-sepolia-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "mantle",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "mode-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "mode",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "moonbeam-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "moonbeam",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "optimism-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "optimism",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "polygon-sepolia-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "polygon",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "ronin-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "ronin",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "scroll-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x5300000000000000000000000000000000000002"
+        }
+      }
+    },
+    {
+      "alias": "scroll",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x5300000000000000000000000000000000000002"
+        }
+      }
+    },
+    {
+      "alias": "sei-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "sei",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "somnia-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "somnia",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "soneium-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "soneium",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "sonic-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "sonic",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "taiko-hoodi-testnet",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "taiko",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "unichain-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "unichain",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "world-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "world",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "x-layer",
+      "metadata": { "arch": "generic", "contracts": {} }
+    },
+    {
+      "alias": "zircuit-sepolia-testnet",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    },
+    {
+      "alias": "zircuit",
+      "metadata": {
+        "arch": "op-stack",
+        "contracts": {
+          "GasPriceOracle": "0x420000000000000000000000000000000000000F"
+        }
+      }
+    }
+  ]
+}

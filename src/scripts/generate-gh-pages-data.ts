@@ -2,6 +2,8 @@ import { CHAINS, deploymentAddresses } from '@api3/contracts';
 import { dapis, getChains, api3ApiIntegrations, dapiManagementMerkleTreeData } from '@api3/dapi-management';
 import * as fs from 'fs';
 
+import getGasMetadata from '../../data/gas-metadata.json';
+
 async function generateGHPagesData() {
   console.log('Generating gh-pages data...');
 
@@ -10,6 +12,7 @@ async function generateGHPagesData() {
   const dapisJson = JSON.stringify(dapis, null, 2);
   const chainsStateJson = JSON.stringify(getChains(), null, 2);
   const apisData = JSON.stringify(api3ApiIntegrations.apisData, null, 2);
+  const gasMetadataJson = JSON.stringify(getGasMetadata, null, 2);
 
   const mtHash = {
     timestamp: dapiManagementMerkleTreeData.timestamp,
@@ -26,6 +29,7 @@ async function generateGHPagesData() {
   fs.writeFileSync('gh-pages-data/chains-state.json', chainsStateJson);
   fs.writeFileSync('gh-pages-data/apis-data.json', apisData);
   fs.writeFileSync('gh-pages-data/management-merkle-tree.json', mtJson);
+  fs.writeFileSync('gh-pages-data/gas-metadata.json', gasMetadataJson);
 
   console.log('gh-pages data generated successfully.');
 }
