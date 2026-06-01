@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@api3/contracts':
-        specifier: ^38.0.0
-        version: 38.0.0(typescript@6.0.2)
+        specifier: ^38.0.1
+        version: 38.0.1(typescript@6.0.2)
       '@api3/dapi-management':
         specifier: ^4.17.1
         version: 4.17.1(eslint@8.57.1)(typescript@6.0.2)
@@ -75,8 +75,8 @@ packages:
     resolution: {integrity: sha512-9Bovi9tWpGVXxgkXC7YOeBXpiyWo2l8RmkHgfA9GAB4G3vZny+a8WHSQeWLNnJ4Zig7W9JTf2peExEAhhjsLjA==}
     engines: {node: '>=18.14.0'}
 
-  '@api3/contracts@38.0.0':
-    resolution: {integrity: sha512-ZHRNmmNAqxu8GlZdQix/V4+ZGcw4OXWfLXA50X3Pz88CkGllHDM82ZkkT088yeq2ABszL8CV8tt1h53CQqnSUQ==}
+  '@api3/contracts@38.0.1':
+    resolution: {integrity: sha512-5egFKSZWGAKoXnG9hUrr85RkgxHFFxNc9W4yjNobW7/puSO9XJ6c7BUxwvQbDibKysW6LD+K8CKtJNZC+wPZAQ==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
@@ -3371,7 +3371,7 @@ snapshots:
   '@api3/api-integrations@13.2.0(eslint@8.57.1)(typescript@6.0.2)':
     dependencies:
       '@api3/airnode-abi': 0.15.0
-      '@api3/contracts': 38.0.0(typescript@6.0.2)
+      '@api3/contracts': 38.0.1(typescript@6.0.2)
       '@api3/ois': 3.0.0
       '@api3/signed-api': 4.5.0(eslint@8.57.1)(typescript@6.0.2)
       ethers: 5.8.0
@@ -3455,7 +3455,7 @@ snapshots:
       - debug
       - utf-8-validate
 
-  '@api3/contracts@38.0.0(typescript@6.0.2)':
+  '@api3/contracts@38.0.1(typescript@6.0.2)':
     dependencies:
       ethers: 6.16.0
       viem: 2.48.11(typescript@6.0.2)(zod@4.3.6)
@@ -3470,7 +3470,7 @@ snapshots:
     dependencies:
       '@api3/api-integrations': 13.2.0(eslint@8.57.1)(typescript@6.0.2)
       '@api3/commons': 1.2.0
-      '@api3/contracts': 38.0.0(typescript@6.0.2)
+      '@api3/contracts': 38.0.1(typescript@6.0.2)
       ethers: 6.16.0
       zod: 4.3.6
     transitivePeerDependencies:
