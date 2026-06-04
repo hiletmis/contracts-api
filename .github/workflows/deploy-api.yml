@@ -2,8 +2,7 @@ name: Deploy and Verify GitHub Pages
 
 on:
   push:
-    branches:
-      - production-gh-pages
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
