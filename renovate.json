@@ -13,17 +13,18 @@
       "groupName": "other major updates"
     },
     {
-      "matchPackagePatterns": ["@api3/.*"],
+      "matchPackageNames": ["@api3/*"],
       "matchUpdateTypes": ["major"],
       "schedule": ["before 4pm"],
+      "automerge": true,
       "groupName": "api3 major updates"
     },
     {
-      "matchPackagePatterns": ["@api3/.*"],
-      "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["before 6pm"],
       "groupName": "api3",
-      "automerge": true
+      "automerge": true,
+      "minimumReleaseAge": null,
+      "matchPackageNames": ["@api3/*"]
     }
   ],
   "rebaseWhen": "behind-base-branch",
@@ -32,5 +33,5 @@
     "enabled": false
   },
   "reviewers": ["hiletmis"],
-  "dependencyDashboard": false
+  "dependencyDashboard": true
 }
