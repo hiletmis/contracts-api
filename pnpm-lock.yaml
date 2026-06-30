@@ -12,8 +12,8 @@ importers:
         specifier: ^38.0.1
         version: 38.0.1(typescript@6.0.2)
       '@api3/dapi-management':
-        specifier: ^4.20.0
-        version: 4.20.0(eslint@8.57.1)(typescript@6.0.2)
+        specifier: ^4.21.0
+        version: 4.21.0(eslint@8.57.1)(typescript@6.0.2)
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@25.5.0)(typescript@6.0.2)
@@ -80,8 +80,8 @@ packages:
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  '@api3/dapi-management@4.20.0':
-    resolution: {integrity: sha512-glEmZcdJ9Y8wYLhsSvaBLezwKBVLuz2IOLk0hiX7OhQaF13Waw+JjumJdlWWr5mwDd1yiRq/HWbDrb3WCF2CLA==}
+  '@api3/dapi-management@4.21.0':
+    resolution: {integrity: sha512-fRduuVyZJigrHpi2YcgJTbTS8n/YaeesLBd+zTAZasOgGKSPv9hG27YJHUfYXSnY6o9YUypUxaV75yaMqonxCA==}
 
   '@api3/ois@2.3.2':
     resolution: {integrity: sha512-hYQCbCAtWMGKV+pECRY5tbfCSOcheeo9s6wtrhn1dOWw151VeG0sKG3VbBEsyA6cvSaldewBWY3t/JGaupdThg==}
@@ -3416,7 +3416,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@api3/dapi-management@4.20.0(eslint@8.57.1)(typescript@6.0.2)':
+  '@api3/dapi-management@4.21.0(eslint@8.57.1)(typescript@6.0.2)':
     dependencies:
       '@api3/api-integrations': 16.0.0(eslint@8.57.1)(typescript@6.0.2)
       '@api3/commons': 1.2.0
