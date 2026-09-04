@@ -15,9 +15,9 @@
     "@api3/dapi-management": "^4.38.0",
     "ts-node": "^10.9.2"
   },
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@10.34.5",
   "devDependencies": {
-    "@types/node": "^25.5.0",
-    "typescript": "^6.0.2"
+    "@types/node": "^25.9.5",
+    "typescript": "^6.0.3"
   }
 }
