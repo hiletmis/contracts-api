@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@api3/contracts':
-        specifier: ^42.0.1
-        version: 42.0.1(typescript@6.0.2)
+        specifier: ^43.0.0
+        version: 43.0.0(typescript@6.0.2)
       '@api3/dapi-management':
         specifier: ^4.41.0
         version: 4.41.0(eslint@8.57.1)(typescript@6.0.2)
@@ -74,6 +74,11 @@ packages:
 
   '@api3/contracts@42.0.1':
     resolution: {integrity: sha512-UscKVCZbpmyO/uCQwndxGEY4Nw6a5gOSSYavp/+oln8kUOmBTf6j2cKzAZSN+GsKOqBAlTXwv1Upx2J2/0iddw==}
+    engines: {node: '>=22.18.0'}
+    hasBin: true
+
+  '@api3/contracts@43.0.0':
+    resolution: {integrity: sha512-/VhEdQrycwxj9PmrA2sS5nBn3KxSvfYwEMbRwx3FON4qp0Ig59j4kKdvdHwRVu6TJv+wO7fScnzgCPqOfm7+aQ==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
@@ -574,6 +579,9 @@ packages:
   '@smithy/core@3.33.3':
     resolution: {integrity: sha512-CsOeKq/9kA3y6VJHt+/+VTCtBaxJ4OTFpgrjIUhPpDIKxBci1k2bJaQASF2h/ELWrulGp+t97DZ0mevfAD8idg==}
     engines: {node: '>=18.0.0'}
+    deprecated: |-
+      Deprecated due to a bug in custom logger data redaction. Upgrade to the latest version. If you used a custom logger with this
+        version, review your logs and rotate any credentials or other secrets. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/credential-provider-imds@4.5.2':
     resolution: {integrity: sha512-A9uSdn72ozbRUSit0eib0TW7nXuNPlaeM0zcGkJ+nE6tFcSDbnmtwoxbTCFBukVQcszDAyvsd7+rTduPTXpygg==}
@@ -674,6 +682,9 @@ packages:
   '@smithy/smithy-client@4.12.8':
     resolution: {integrity: sha512-aJaAX7vHe5i66smoSSID7t4rKY08PbD8EBU7DOloixvhOozfYWdcSYE4l6/tjkZ0vBZhGjheWzB2mh31sLgCMA==}
     engines: {node: '>=18.0.0'}
+    deprecated: |-
+      Deprecated due to a bug in custom logger data redaction. Upgrade to the latest version. If you used a custom logger with
+        this version, review your logs and rotate any credentials or other secrets. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/types@4.18.0':
     resolution: {integrity: sha512-CgB6HHWer/vrKps24ulRIbpcpb7K4xAU7SkZ7YHzBPlwHsvsrCJFEXK421s+cJzX+ZrqtA/TuU5w1HzI7k9N8A==}
@@ -2463,6 +2474,14 @@ packages:
       typescript:
         optional: true
 
+  ox@0.14.63:
+    resolution: {integrity: sha512-TSKYN151boL1Aq/vsFrd8Buvd7v+oTQr8V7z4f4QQTSMB+ohD8cbNbHCtKRLI0Gs8LuYKirf5qvElTKVIFe2jw==}
+    peerDependencies:
+      typescript: '>=5.4.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   p-limit@2.3.0:
     resolution: {integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==}
     engines: {node: '>=6'}
@@ -3018,6 +3037,17 @@ packages:
       typescript:
         optional: true
 
+  viem@2.57.17:
+    resolution: {integrity: sha512-yIMqNoKoVAMwX+zVbqkxfqq7qbGHmKXZidh/xfVpiPTJlAbbDDdDIMH5dDQWxhZcj56L8tPOwsIIxF618P+TOg==}
+    peerDependencies:
+      mppx: '>=0.17.0'
+      typescript: '>=5.0.4'
+    peerDependenciesMeta:
+      mppx:
+        optional: true
+      typescript:
+        optional: true
+
   wcwidth@1.0.1:
     resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}
 
@@ -3123,9 +3153,6 @@ packages:
 
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
-
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
@@ -3363,11 +3390,23 @@ snapshots:
   '@api3/contracts@42.0.1(typescript@6.0.2)':
     dependencies:
       ethers: 6.17.0
-      viem: 2.54.6(typescript@6.0.2)(zod@4.4.3)
+      viem: 2.54.6(typescript@6.0.2)(zod@4.6.7)
       yargs: 17.7.3
-      zod: 4.4.3
+      zod: 4.6.7
     transitivePeerDependencies:
       - bufferutil
+      - typescript
+      - utf-8-validate
+
+  '@api3/contracts@43.0.0(typescript@6.0.2)':
+    dependencies:
+      ethers: 6.17.0
+      viem: 2.57.17(typescript@6.0.2)(zod@4.6.7)
+      yargs: 17.7.3
+      zod: 4.6.7
+    transitivePeerDependencies:
+      - bufferutil
+      - mppx
       - typescript
       - utf-8-validate
 
@@ -4997,10 +5036,10 @@ snapshots:
       typescript: 6.0.2
       zod: 3.25.76
 
-  abitype@1.2.3(typescript@6.0.2)(zod@4.4.3):
+  abitype@1.2.3(typescript@6.0.2)(zod@4.6.7):
     optionalDependencies:
       typescript: 6.0.2
-      zod: 4.4.3
+      zod: 4.6.7
 
   accepts@1.3.8:
     dependencies:
@@ -6766,7 +6805,7 @@ snapshots:
     transitivePeerDependencies:
       - zod
 
-  ox@0.14.30(typescript@6.0.2)(zod@4.4.3):
+  ox@0.14.30(typescript@6.0.2)(zod@4.6.7):
     dependencies:
       '@adraffy/ens-normalize': 1.11.1
       '@noble/ciphers': 1.3.0
@@ -6774,7 +6813,22 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.2.3(typescript@6.0.2)(zod@4.4.3)
+      abitype: 1.2.3(typescript@6.0.2)(zod@4.6.7)
+      eventemitter3: 5.0.1
+    optionalDependencies:
+      typescript: 6.0.2
+    transitivePeerDependencies:
+      - zod
+
+  ox@0.14.63(typescript@6.0.2)(zod@4.6.7):
+    dependencies:
+      '@adraffy/ens-normalize': 1.11.1
+      '@noble/ciphers': 1.3.0
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
+      '@scure/bip32': 1.7.0
+      '@scure/bip39': 1.6.0
+      abitype: 1.2.3(typescript@6.0.2)(zod@4.6.7)
       eventemitter3: 5.0.1
     optionalDependencies:
       typescript: 6.0.2
@@ -7447,15 +7501,32 @@ snapshots:
       - utf-8-validate
       - zod
 
-  viem@2.54.6(typescript@6.0.2)(zod@4.4.3):
+  viem@2.54.6(typescript@6.0.2)(zod@4.6.7):
     dependencies:
       '@noble/curves': 1.9.1
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.2.3(typescript@6.0.2)(zod@4.4.3)
+      abitype: 1.2.3(typescript@6.0.2)(zod@4.6.7)
       isows: 1.0.7(ws@8.21.0)
-      ox: 0.14.30(typescript@6.0.2)(zod@4.4.3)
+      ox: 0.14.30(typescript@6.0.2)(zod@4.6.7)
+      ws: 8.21.0
+    optionalDependencies:
+      typescript: 6.0.2
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+      - zod
+
+  viem@2.57.17(typescript@6.0.2)(zod@4.6.7):
+    dependencies:
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
+      '@scure/bip32': 1.7.0
+      '@scure/bip39': 1.6.0
+      abitype: 1.2.3(typescript@6.0.2)(zod@4.6.7)
+      isows: 1.0.7(ws@8.21.0)
+      ox: 0.14.63(typescript@6.0.2)(zod@4.6.7)
       ws: 8.21.0
     optionalDependencies:
       typescript: 6.0.2
@@ -7587,7 +7658,5 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod@3.25.76: {}
-
-  zod@4.4.3: {}
 
   zod@4.6.7: {}
